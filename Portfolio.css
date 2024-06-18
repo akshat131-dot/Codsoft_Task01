@@ -1,0 +1,238 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Ensure the html and body elements take up the full height */
+html, body {
+  height: 100%;
+  
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color:black;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  float: right;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  /* align-items: center;
+  text-align: start; */
+  color: #191616;
+  padding: 0 20px;
+  height: 100vh; /* Ensure it takes the full height of the viewport */
+  /* background: url('Codericon.jpg') no-repeat center center/cover;
+  background-size: 200px;
+  background-attachment: fixed; Ensures the background image stays fixed when scrolling */
+  /* background: url('Codericon.jpg') no-repeat center center/cover;
+  background-size: 150px;
+  background-attachment: fixed; */
+  background: url(Codericion3.png) no-repeat center center/cover;
+  background-size: 600px;
+}
+
+.home h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.home p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.about, .skills, .projects, .resume, .contact {
+
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about h2, .skills h2, .projects h2, .resume h2, .contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.about img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.skills {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.skills h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.skills-table {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  width: calc(33.33% - 20px); /* Adjust width based on number of skills */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skill-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.skill-level {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-level-bar {
+  height: 100%;
+  background-color: #007bff; /* Change color as needed */
+  transition: width 0.5s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skill {
+      width: calc(50% - 20px); /* Two skills per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .skill {
+      width: 100%; /* One skill per row on mobile */
+  }
+}
+
+.projects{
+  background: url(Codericon.jpg) no-repeat center center/cover;
+  background-size: 300px;
+  background-position: right;
+  color: #111010;
+  background-blend-mode: multiply;
+}
+.project-item {
+  margin-bottom: 20px;
+}
+
+.project-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-item p {
+  font-size: 18px;
+}
+.certifications{
+  background-color: #191616;
+  color: #fff;
+}
+.achievements, .certifications {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.achievements h2, .certifications h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.achievements ul, .certifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements ul li, .certifications ul li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.resume a {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.resume a:hover {
+  background-color: #0056b3;
+}
+.contact{
+  background-color: rgb(125, 103, 103);
+  color: #1b1a1a;
+}
+.contact p {
+  font-size: 18px;
+}
+
+.footer {
+  background-color:black;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+}
